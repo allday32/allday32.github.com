@@ -1,29 +1,108 @@
-@charset "utf-8";
+@charset "UTF-8";
 /* LJI */
-
 /* Common */
-body,p,h1,h2,h3,h4,h5,h6,menu,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
-html, body{width:100%;height:100%;background-color:#fff;}
-body,input,textarea,select,button,table{font-family:'돋움',Dotum,Helvetica,sans-serif;font-size:12px}
-img,fieldset{border:0}
-menu,ul,ol{list-style:none}
-em,address{font-style:normal}
-a{text-decoration:none;background-color:transparent}
-a:hover,a:active,a:focus{text-decoration:underline}
-caption,hr,address{display:none}
-#forkme_banner {
-    display: block;
-    position: absolute;
-    top:0;
-    right: 10px;
-    z-index: 10;
-    padding: 10px 50px 10px 10px;
-    color: #fff;
-    background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
-    font-weight: 700;
-    box-shadow: 0 0 10px rgba(0,0,0,.5);
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
+body, p, h1, h2, h3, h4, h5, h6, menu, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select {
+  margin: 0;
+  padding: 0; 
 }
 
-.blind{display:block;overflow:hidden;*position:absolute;top:0;left:0;width:0;height:0;border:0;background:none;font-size:0;line-height:0}
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #fff; 
+}
+
+body, input, textarea, select, button, table {
+  font-family: '돋움',Dotum,Helvetica,sans-serif;
+  font-size: 12px; 
+}
+
+img, fieldset {
+  border: 0; 
+}
+
+menu, ul, ol {
+  list-style: none; 
+}
+
+em, address {
+  font-style: normal; 
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent; 
+}
+
+a:hover, a:active, a:focus {
+  text-decoration: underline; 
+}
+
+caption, hr, address {
+  display: none; 
+}
+
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; 
+}
+
+#forkme_banner {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  z-index: 10;
+  padding: 10px 50px 10px 10px;
+  color: #fff;
+  font-weight: 700;
+  background-color: #0090ff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px; 
+}
+
+.blind {
+  display: block;
+  overflow: hidden;
+  *position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 0;
+  background: none;
+  font-size: 0;
+  line-height: 0; 
+}
+
+.header_wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff; 
+}
+  .header_wrap .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    font-family: "Helvetica Neue", Arial, Helvetica;
+    font-size: 24px;
+    font-weight: normal; 
+}
+    .header_wrap .logo:hover {
+      background: #f2f2f2;
+      -o-transition: background 0.15s ease-in-out;
+      -moz-transition: background 0.15s ease-in-out;
+      -webkit-transition: background 0.15s ease-in-out;
+      transition: background 0.15s ease-in-out; 
+}
+
+.content_wrap {
+  position: relative;
+  padding-top: 70px;
+  height: 2000px; 
+}
