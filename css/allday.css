@@ -3,7 +3,9 @@
 /* Common */
 body, p, h1, h2, h3, h4, h5, h6, menu, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select {
   margin: 0;
-  padding: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
 }
 
 html, body {
@@ -54,7 +56,6 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   z-index: 10;
   padding: 10px 50px 10px 10px;
   color: #fff;
-  font-weight: 700;
   background-color: #0090ff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-bottom-left-radius: 3px;
@@ -103,6 +104,5 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 
 .content_wrap {
   position: relative;
-  padding-top: 70px;
-  height: 2000px; 
+  padding-top: 70px; 
 }
