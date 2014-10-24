@@ -2,7 +2,8 @@
 /* LJI */
 
 /* Common */
-body,p,h1,h2,h3,h4,h5,h6,menu,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0;box-sizing:border-box;-webkit-box-sizing:border-box;}
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+body,p,div,h1,h2,h3,h4,h5,h6,menu,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select,video,audio{margin:0;padding:0;box-sizing:border-box;-webkit-box-sizing:border-box;}
 html, body{width:100%;height:100%;background-color:#fff;}
 body,input,textarea,select,button,table{font-family:'돋움',Dotum,Helvetica,sans-serif;font-size:12px}
 img,fieldset{border:0}
@@ -29,9 +30,19 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 .blind{display:block;overflow:hidden;*position:absolute;top:0;left:0;width:0;height:0;border:0;background:none;font-size:0;line-height:0}
 .header_wrap{
-  position:fixed;top:0;left:0;height:60px;width:100%;z-index:1000;background-color:#fff;
+  position:fixed;width:100%;height:70px;z-index:1000;background-color:rgba(255,255,255, .8);
+  -webkit-transform:translate3d(0px,0,0);
+  -moz-transform:translate3d(0px,0,0);
+  -o-transform:translate3d(0px,0,0);
+  -ms-transform:translate3d(0px,0,0);
+  transform:translate3d(0px,0,0);
+  -webkit-transition:-webkit-transform .3s ease 0s,height .2s linear 0s;
+  -moz-transition:-moz-transform .3s ease 0s,height .2s linear 0s;
+  -o-transition:-o-transform .3s ease 0s,height .2s linear 0s;
+  -ms-transition:-ms-transform .3s ease 0s,height .2s linear 0s;
+  transition:transform .3s ease 0s,height .2s linear 0s;
   .logo{
-    position:absolute;top:0;left:0;padding:20px;font-family:"Helvetica Neue", Arial, Helvetica;font-size:24px;font-weight:normal;
+    display:block;margin:0 auto;padding:20px;font-family:"Helvetica Neue", Arial, Helvetica;font-size:24px;font-weight:normal;text-align:center;width:20%;
     &:hover{
       background: #f2f2f2;
       -o-transition: background 0.15s ease-in-out;
@@ -39,12 +50,49 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
       -webkit-transition: background 0.15s ease-in-out;
       transition: background 0.15s ease-in-out;
     }
+}
+  .nav{float:left;
+    a{display:inline-block;padding:10px;color:#000;font-size:14px;}
   }
+}
+.header_wrap.off{
+  -webkit-transform:translate3d(0px,-70px,0);
+  -moz-transform:translate3d(0px,-70px,0);
+  -o-transform:translate3d(0px,-70px,0);
+  -ms-transform:translate3d(0px,-70px,0);
+  transform:translate3d(0px,-70px,0)
+}
+.box{height:500px;}
+.box.box_v1{background-color:#cbcbcb}
+.box.box_v2{background-color:#b0b0b0}
+.box.box_v3{background-color:#818181}
 
+.content_wrap{position:relative;padding-top:71px;
+  .visual{position:relative;
+    .visual_txt{position:absolute;left:10%;top:30px;font-family:hanna;font-size:5em;text-shadow:3px 2px 2px rgba(255,255,255, .5);line-height:60px;}
+  }
 }
 
 
-.content_wrap{position:relative;padding-top:70px;}
-
-
 @media screen and (max-width: 520px) { }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
