@@ -1,161 +1,31 @@
 /* LJI */
 /* Common */
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-body, p, div, h1, h2, h3, h4, h5, h6, menu, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select, video, audio {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box; 
-}
+body,p,div,h1,h2,h3,h4,h5,h6,menu,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select,video,audio{margin:0;padding:0;box-sizing:border-box;-webkit-box-sizing:border-box}
+html,body{width:100%;height:100%;background-color:#fff}
+body,input,textarea,select,button,table{font-family:'Nanum Gothic', serif;font-size:12px}
+img,fieldset{border:0}
+menu,ul,ol{list-style:none}
+em,address{font-style:normal}
+a{text-decoration:none;background-color:transparent}
+a:hover,a:active,a:focus{text-decoration:underline}
+caption,hr,address{display:none}
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block}
+#forkme_banner{display:block;position:absolute;top:0;right:10px;z-index:10;padding:10px 50px 10px 10px;color:#fff;background-color:#0090ff;box-shadow:0 0 10px rgba(0, 0, 0, 0.5);border-bottom-left-radius:3px;border-bottom-right-radius:3px}
+@media screen and (max-width: 640px) { #forkme_banner{width:20px;height:20px;font-size:0;padding:0} }
 
-html, body {
-  width: 100%;
-  height: 100%;
-  background-color: #fff; 
-}
-
-body, input, textarea, select, button, table {
-  font-family: 'Nanum Gothic', serif;
-  font-size: 12px; 
-}
-
-img, fieldset {
-  border: 0; 
-}
-
-menu, ul, ol {
-  list-style: none; 
-}
-
-em, address {
-  font-style: normal; 
-}
-
-a {
-  text-decoration: none;
-  background-color: transparent; 
-}
-
-a:hover, a:active, a:focus {
-  text-decoration: underline; 
-}
-
-caption, hr, address {
-  display: none; 
-}
-
-article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block; 
-}
-
-#forkme_banner {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 10px;
-  z-index: 10;
-  padding: 10px 50px 10px 10px;
-  color: #fff;
-  background-color: #0090ff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px; 
-}
-
-.blind {
-  display: block;
-  overflow: hidden;
-  *position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  border: 0;
-  background: none;
-  font-size: 0;
-  line-height: 0; 
-}
-
-.header_wrap {
-  position: fixed;
-  width: 100%;
-  height: 70px;
-  z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.8);
-  -webkit-transform: translate3d(0px, 0, 0);
-  -moz-transform: translate3d(0px, 0, 0);
-  -o-transform: translate3d(0px, 0, 0);
-  -ms-transform: translate3d(0px, 0, 0);
-  transform: translate3d(0px, 0, 0);
-  -webkit-transition: -webkit-transform .3s ease 0s,height .2s linear 0s;
-  -moz-transition: -moz-transform .3s ease 0s,height .2s linear 0s;
-  -o-transition: -o-transform .3s ease 0s,height .2s linear 0s;
-  -ms-transition: -ms-transform .3s ease 0s,height .2s linear 0s;
-  transition: transform .3s ease 0s,height .2s linear 0s; 
-}
-  .header_wrap .logo {
-    display: block;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: "Helvetica Neue", Arial, Helvetica;
-    font-size: 24px;
-    font-weight: normal;
-    text-align: center;
-    width: 20%; 
-}
-    .header_wrap .logo:hover {
-      background: #f2f2f2;
-      -o-transition: background 0.15s ease-in-out;
-      -moz-transition: background 0.15s ease-in-out;
-      -webkit-transition: background 0.15s ease-in-out;
-      transition: background 0.15s ease-in-out; 
-}
-  .header_wrap .nav {
-    float: left; 
-}
-    .header_wrap .nav a {
-      display: inline-block;
-      padding: 10px;
-      color: #000;
-      font-size: 14px; 
-}
-
-.header_wrap.off {
-  -webkit-transform: translate3d(0px, -70px, 0);
-  -moz-transform: translate3d(0px, -70px, 0);
-  -o-transform: translate3d(0px, -70px, 0);
-  -ms-transform: translate3d(0px, -70px, 0);
-  transform: translate3d(0px, -70px, 0); 
-}
-
-.box {
-  height: 500px; 
-}
-
-.box.box_v1 {
-  background-color: #cbcbcb; 
-}
-
-.box.box_v2 {
-  background-color: #b0b0b0; 
-}
-
-.box.box_v3 {
-  background-color: #818181; 
-}
-
-.content_wrap {
-  position: relative;
-  padding-top: 71px; 
-}
-  .content_wrap .visual {
-    position: relative; 
-}
-    .content_wrap .visual .visual_txt {
-      position: absolute;
-      left: 5%;
-      top: 30px;
-      font-size: 4em;
-      text-shadow: 3px 2px 2px rgba(255, 255, 255, 0.5);
-      line-height: 60px; 
-}
+.blind{display:block;overflow:hidden;*position:absolute;top:0;left:0;width:0;height:0;border:0;background:none;font-size:0;line-height:0}
+.header_wrap{position:fixed;width:100%;height:70px;z-index:1000;background-color:rgba(255, 255, 255, 0.8);-webkit-transform:translate3d(0px, 0, 0);-moz-transform:translate3d(0px, 0, 0);-o-transform:translate3d(0px, 0, 0);-ms-transform:translate3d(0px, 0, 0);transform:translate3d(0px, 0, 0);-webkit-transition:-webkit-transform .3s ease 0s,height .2s linear 0s;-moz-transition:-moz-transform .3s ease 0s,height .2s linear 0s;-o-transition:-o-transform .3s ease 0s,height .2s linear 0s;-ms-transition:-ms-transform .3s ease 0s,height .2s linear 0s;transition:transform .3s ease 0s,height .2s linear 0s}
+.header_wrap .logo{display:block;margin:0 auto;padding:20px;font-family:"Helvetica Neue", Arial, Helvetica;font-size:24px;font-weight:normal;text-align:center;width:20%}
+.header_wrap .logo:hover{background:#f2f2f2;-o-transition:background 0.15s ease-in-out;-moz-transition:background 0.15s ease-in-out;-webkit-transition:background 0.15s ease-in-out;transition:background 0.15s ease-in-out}
+.header_wrap .nav{float:left}
+.header_wrap .nav a{display:inline-block;padding:10px;color:#000;font-size:14px}
+.header_wrap.off{-webkit-transform:translate3d(0px, -70px, 0);-moz-transform:translate3d(0px, -70px, 0);-o-transform:translate3d(0px, -70px, 0);-ms-transform:translate3d(0px, -70px, 0);transform:translate3d(0px, -70px, 0)}
+.box{height:500px}
+.box.box_v1{background-color:#cbcbcb}
+.box.box_v2{background-color:#b0b0b0}
+.box.box_v3{background-color:#818181}
+.box.box_v3{background-color:#cf6e0e}
+.content_wrap{position:relative;padding-top:71px}
+.content_wrap .visual{position:relative}
+.content_wrap .visual .visual_txt{position:absolute;left:5%;top:30px;font-size:4em;text-shadow:3px 2px 2px rgba(255, 255, 255, 0.5);line-height:60px}

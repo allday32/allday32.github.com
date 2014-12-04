@@ -27,6 +27,11 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
     box-shadow: 0 0 10px rgba(0,0,0,.5);
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
+  @media screen and (max-width: 640px) {
+    width:20px;height:20px;
+    font-size:0;
+    padding:0
+  }
 }
 .blind{display:block;overflow:hidden;*position:absolute;top:0;left:0;width:0;height:0;border:0;background:none;font-size:0;line-height:0}
 .header_wrap{
@@ -66,33 +71,11 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 .box.box_v1{background-color:#cbcbcb}
 .box.box_v2{background-color:#b0b0b0}
 .box.box_v3{background-color:#818181}
+.box.box_v3{background-color:#cf6e0e}
 
 .content_wrap{position:relative;padding-top:71px;
   .visual{position:relative;
     .visual_txt{position:absolute;left:5%;top:30px;font-size:4em;text-shadow:3px 2px 2px rgba(255,255,255, .5);line-height:60px;}
   }
 }
-
-
-@media screen and (max-width: 520px) { }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
